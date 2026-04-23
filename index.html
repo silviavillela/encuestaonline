@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Antigravity | Opinión del Curso</title>
+    <meta name="description" content="Danos tu opinión sobre el curso de Antigravity y ayúdanos a mejorar.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Antigravity</h1>
+        <p class="subtitle">Tu feedback es el combustible de nuestra evolución</p>
+        
+        <form id="surveyForm">
+            <!-- ID Estudiante -->
+            <div class="form-group">
+                <label for="id_estudiante">ID del Estudiante</label>
+                <input type="text" id="id_estudiante" name="IDEstudiante" placeholder="Ej: ANT-2024-001" required>
+            </div>
+
+            <!-- Nivel de Satisfacción -->
+            <div class="form-group">
+                <label>¿Cuál es tu nivel de satisfacción general?</label>
+                <div class="rating-group">
+                    <div class="rating-option">
+                        <input type="radio" id="sat1" name="NiveldeSatisfaccion" value="1" required>
+                        <label for="sat1" class="rating-label">1</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="sat2" name="NiveldeSatisfaccion" value="2">
+                        <label for="sat2" class="rating-label">2</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="sat3" name="NiveldeSatisfaccion" value="3">
+                        <label for="sat3" class="rating-label">3</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="sat4" name="NiveldeSatisfaccion" value="4">
+                        <label for="sat4" class="rating-label">4</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="sat5" name="NiveldeSatisfaccion" value="5">
+                        <label for="sat5" class="rating-label">5</label>
+                    </div>
+                </div>
+                <div class="rating-desc">
+                    <span>Muy insatisfecho</span>
+                    <span>Muy satisfecho</span>
+                </div>
+            </div>
+
+            <!-- Claridad del Contenido -->
+            <div class="form-group">
+                <label>¿Qué tan claro te ha parecido el contenido?</label>
+                <div class="rating-group">
+                    <div class="rating-option">
+                        <input type="radio" id="clar1" name="Claridadcontenido" value="1" required>
+                        <label for="clar1" class="rating-label">1</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="clar2" name="Claridadcontenido" value="2">
+                        <label for="clar2" class="rating-label">2</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="clar3" name="Claridadcontenido" value="3">
+                        <label for="clar3" class="rating-label">3</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="clar4" name="Claridadcontenido" value="4">
+                        <label for="clar4" class="rating-label">4</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="clar5" name="Claridadcontenido" value="5">
+                        <label for="clar5" class="rating-label">5</label>
+                    </div>
+                </div>
+                <div class="rating-desc">
+                    <span>Nada claro</span>
+                    <span>Muy claro</span>
+                </div>
+            </div>
+
+            <!-- Aplicabilidad Práctica -->
+            <div class="form-group">
+                <label>¿Qué tan aplicable te parece lo aprendido?</label>
+                <div class="rating-group">
+                    <div class="rating-option">
+                        <input type="radio" id="app1" name="AplicabilidadPractica" value="1" required>
+                        <label for="app1" class="rating-label">1</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="app2" name="AplicabilidadPractica" value="2">
+                        <label for="app2" class="rating-label">2</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="app3" name="AplicabilidadPractica" value="3">
+                        <label for="app3" class="rating-label">3</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="app4" name="AplicabilidadPractica" value="4">
+                        <label for="app4" class="rating-label">4</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="app5" name="AplicabilidadPractica" value="5">
+                        <label for="app5" class="rating-label">5</label>
+                    </div>
+                </div>
+                <div class="rating-desc">
+                    <span>Nada aplicable</span>
+                    <span>Muy aplicable</span>
+                </div>
+            </div>
+
+            <!-- Comentarios Adicionales -->
+            <div class="form-group">
+                <label for="comentarios_adicionales">Comentarios Adicionales</label>
+                <textarea id="comentarios_adicionales" name="ComentariosAdicionales" placeholder="Comparte tus pensamientos o sugerencias..."></textarea>
+            </div>
+
+            <button type="submit">Enviar Encuesta</button>
+        </form>
+    </div>
+
+    <!-- Túnel oculto para saltar restricciones de CORS -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
